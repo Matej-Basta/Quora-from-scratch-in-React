@@ -6,6 +6,7 @@ export const Answer = (props) => {
   //state that keeps a track of an array of comments
   const [comments, setComments] = useState([]);
 
+  //constants that create React state for nick and comments
   const [nick, setNick] = useState("");
   const [comment, setComment] = useState("");
   return (
