@@ -9,12 +9,16 @@ export const Answer = (props) => {
   //constants that create React state for nick and comments
   const [nick, setNick] = useState("");
   const [comment, setComment] = useState("");
+
   return (
     <>
+      {/* creating an answer in a list item  */}
       <li>
         {props.nick}: {props.answer}
       </li>
+      {/* appending like button  */}
       <LikeButton />
+      {/* creating a list of comments  */}
       <ul>
         {comments.map((element, index) => (
           <Comment key={index} nick={element.nick} comment={element.comment} />
