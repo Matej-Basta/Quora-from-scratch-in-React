@@ -3,6 +3,7 @@ import { Comment } from "./Comment.js";
 import React, { useState } from "react";
 
 export const Answer = (props) => {
+  //state that keeps a track of an array of comments
   const [comments, setComments] = useState([]);
 
   const [nick, setNick] = useState("");
